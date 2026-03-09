@@ -1,16 +1,16 @@
-# Nomad - AI Travel Planner ✈️
+# Nomad - AI Travel Planner
 
 An intelligent travel itinerary planner powered by Groq's Llama 3-8B model, real-time web search, and Streamlit.
 
-## 🌟 Features
+##  Features
 
 - **Two-Stage AI Agent**:
   - **Stage A (Strategist)**: Analyzes your travel requirements and generates optimal search queries
-  - **Stage B (Planner)**: Creates comprehensive, personalized itineraries using real-time data
+  - **Stage B (Planner)**: Creates personalized itineraries using real-time data
 
 - **Real-Time Web Search**: Uses DuckDuckGo to fetch current information about weather, events, and travel conditions
 
-- **Comprehensive Itineraries**: Includes:
+- **Itineraries**: Includes:
   - Trip overview (transportation, currency, language)
   - Accommodation recommendations
   - Day-by-day detailed itinerary
@@ -19,12 +19,12 @@ An intelligent travel itinerary planner powered by Groq's Llama 3-8B model, real
 
 - **Customizable**: Supports different budgets, travel groups, and trip durations
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
 - Python 3.9 or higher
-- Groq API key (get one free at [console.groq.com](https://console.groq.com))
+- Groq API key (at [console.groq.com](https://console.groq.com))
 
 ### Installation
 
@@ -35,7 +35,7 @@ An intelligent travel itinerary planner powered by Groq's Llama 3-8B model, real
 pip install -r requirements.txt
 ```
 
-3. **Set up your Groq API key** (choose one method):
+3. **Set up Groq API key** (choose one method):
 
    **Option A: Using Streamlit Secrets (Recommended for deployment)**
    
@@ -74,7 +74,7 @@ streamlit run app.py
 4. **Download Your Itinerary**:
    - Click the download button to save as Markdown
 
-## 🏗️ Architecture
+## Architecture
 
 ### Two-Stage Agent Logic
 
@@ -93,7 +93,7 @@ Real-time Data → Stage B (Planner) → Final Itinerary
 - **Frontend**: Streamlit
 - **Language**: Python 3.9+
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 nomad-travel-planner/
@@ -104,7 +104,7 @@ nomad-travel-planner/
     └── secrets.toml   # API key configuration (create this)
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Streamlit Secrets
 
@@ -122,7 +122,7 @@ Alternatively, you can set environment variables:
 export GROQ_API_KEY="your-api-key-here"
 ```
 
-## 🎯 Key Functions
+## Key Functions
 
 ### `search_web(query)`
 - Searches DuckDuckGo for real-time travel information
@@ -139,7 +139,7 @@ export GROQ_API_KEY="your-api-key-here"
 - Combines user inputs with real-time search data
 - Formats output in structured Markdown
 
-## 📋 Sample Output Sections
+## Sample Output Sections
 
 1. **Trip Overview**: Transportation, currency, language basics
 2. **Accommodation**: Area recommendations with pricing
@@ -147,7 +147,7 @@ export GROQ_API_KEY="your-api-key-here"
 4. **Budget Breakdown**: Detailed cost estimates
 5. **Packing & Safety**: Weather-appropriate tips and warnings
 
-## 🛡️ Error Handling
+## Error Handling
 
 The app includes comprehensive error handling for:
 - Missing API keys
@@ -155,7 +155,7 @@ The app includes comprehensive error handling for:
 - LLM API errors
 - Invalid user inputs
 
-## 🚀 Deployment
+##  Deployment
 
 ### Streamlit Community Cloud
 
@@ -170,31 +170,23 @@ The app includes comprehensive error handling for:
 streamlit run app.py --server.address 0.0.0.0
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 - Report bugs
 - Suggest features
 - Submit pull requests
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Groq](https://groq.com) for ultra-fast LLM inference
 - [DuckDuckGo](https://duckduckgo.com) for privacy-focused search
 - [Streamlit](https://streamlit.io) for the amazing web framework
 - [Meta AI](https://ai.meta.com) for Llama 3 model
 
-## 📞 Support
-
-For issues or questions:
-- Open an issue on GitHub
-- Check the [Streamlit documentation](https://docs.streamlit.io)
-- Visit [Groq documentation](https://console.groq.com/docs)
-
----
 
 **Happy Travels!** 🌍✈️🎒
